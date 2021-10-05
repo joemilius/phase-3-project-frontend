@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 const ActivitiesNames = ({day, getActivityNames, date }) => {
     const [dayActivities, setDayActivities] = useState([])
+    console.log(day)
     
     const weekday = new Array(7);
     weekday[0] = "Sunday";

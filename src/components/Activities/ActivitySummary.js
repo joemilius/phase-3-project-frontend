@@ -14,7 +14,7 @@ function ActivitySummary({ days, isListShowing, getActivityNames, dayActivities,
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
 
-      
+     console.log(days) 
 
     return (
         <ul>   

@@ -36,7 +36,7 @@ const NewActivityForm = ({ getActivityNames, setGetActivityNames, day_id, onNewA
           alert('Please select a start time and end time')
 
         } else {
-          setGetActivityNames(!getActivityNames)
+          
           const createdActivity =
           {
               name: newActivity.name,
@@ -61,6 +61,7 @@ const NewActivityForm = ({ getActivityNames, setGetActivityNames, day_id, onNewA
               start_time: "start_time",
               end_time: "end_time"
           })
+          setGetActivityNames(!getActivityNames)
         } 
       }
 

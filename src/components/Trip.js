@@ -57,12 +57,11 @@ const Trip = ({ trip }) => {
             fetch(`http://localhost:9292/trips/${trip.id}`)
             .then(response => response.json())
             .then(data => {
-                // console.log(data)
                 setThisTrip(...thisTrip, data)})
     
     }, [])
 
-    // console.log(thisTrip.days)
+    console.log(thisTrip)
 
     return (
         <div>
